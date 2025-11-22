@@ -11,8 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
-    <Folder Include="Implementations\" />
+    <ProjectReference Include="..\BeefData\BeefData.csproj" />
   </ItemGroup>
 
 </Project>

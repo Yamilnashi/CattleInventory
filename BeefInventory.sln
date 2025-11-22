@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36603.0 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeefInventory", "BeefInventory.csproj", "{C1C08A3D-02B7-4233-A9C8-01D98EA0E3C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeefData", "..\BeefData\BeefData.csproj", "{7531589F-75FD-4BFB-906B-E9A514F4BEE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C1C08A3D-02B7-4233-A9C8-01D98EA0E3C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1C08A3D-02B7-4233-A9C8-01D98EA0E3C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1C08A3D-02B7-4233-A9C8-01D98EA0E3C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7531589F-75FD-4BFB-906B-E9A514F4BEE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7531589F-75FD-4BFB-906B-E9A514F4BEE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7531589F-75FD-4BFB-906B-E9A514F4BEE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7531589F-75FD-4BFB-906B-E9A514F4BEE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

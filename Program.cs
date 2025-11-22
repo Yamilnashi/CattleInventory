@@ -1,4 +1,7 @@
 
+using BeefData.Implementations;
+using BeefData.Interfaces;
+
 namespace BeefInventory
 {
     public class Program
@@ -8,6 +11,12 @@ namespace BeefInventory
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddScoped<ICattleService>(serviceProvider =>
+            {
+                // obviously would do this differently in a work environment by saving this in azure key vault or something similar, just for POC
+                string connectionString = "";
+                return new CattleService(connectionString);
+            });
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
