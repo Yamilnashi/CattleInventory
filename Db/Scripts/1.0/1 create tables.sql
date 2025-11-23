@@ -14,6 +14,8 @@ CREATE TABLE [Cattle]
  [CattleId]     int IDENTITY (1, 1) NOT NULL ,
  [StatusCode]   tinyint NOT NULL ,
  [ReceivedDate] datetime2(7) NOT NULL ,
+ [IsReadyToShip] bit NOT NULL default('false') ,
+ [RowVersion] ROWVERSION NOT NULL ,
 
  CONSTRAINT [PK_1_CattleId] PRIMARY KEY CLUSTERED ([CattleId] ASC),
  CONSTRAINT [FK_1_CattleStatus_StatusCode] FOREIGN KEY ([StatusCode])  REFERENCES [CattleStatus]([StatusCode])
@@ -38,7 +40,7 @@ CREATE TABLE [BeefProducts]
  [CattleId]        int NOT NULL ,
  [ProductTypeCode] tinyint NOT NULL ,
  [Quantity]        int NOT NULL ,
- [QualityScore]    tinyint NOT NULL ,
+ [QualityScore]    tinyint NULL ,
 
  CONSTRAINT [PK_1_ProductId] PRIMARY KEY CLUSTERED ([ProductId] ASC),
  CONSTRAINT [Index_1_CattleId_ProductTypeCode] UNIQUE NONCLUSTERED ([CattleId] ASC, [ProductTypeCode] ASC),
